@@ -7,7 +7,7 @@ import JavaScriptCore
 public class Plugin {
     
     var ctx : JSContext!
-    public var onmessage : ((_ data : AnyObject?) -> Void)?
+    public var onmessage : ((_ data : Any?) -> Void)?
     
     public init(file : URL) {
         
@@ -37,13 +37,13 @@ public class Plugin {
     }
     
     /** Sends a message to the plugin */
-    public func postMessage(data : AnyObject?) {
+    public func postMessage(data : Any) {
         
         // Find the plugin's onmessage handler
         let handler = ctx.globalObject.forProperty("onmessage")
         
         // Send message
-        handler?.call(withArguments: data == nil ? [] : [data])
+        handler?.call(withArguments: [data])
         
     }
     

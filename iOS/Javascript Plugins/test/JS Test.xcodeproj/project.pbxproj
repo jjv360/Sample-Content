@@ -12,7 +12,8 @@
 		77F48E081D9ABB110091DD7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F48E061D9ABB110091DD7D /* Main.storyboard */; };
 		77F48E0A1D9ABB110091DD7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F48E091D9ABB110091DD7D /* Assets.xcassets */; };
 		77F48E0D1D9ABB110091DD7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F48E0B1D9ABB110091DD7D /* LaunchScreen.storyboard */; };
-		77F48E151D9ABB5E0091DD7D /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F48E141D9ABB5E0091DD7D /* Plugin.swift */; };
+		77F48E171D9AC7D60091DD7D /* my_plugin.js in Resources */ = {isa = PBXBuildFile; fileRef = 77F48E161D9AC7D60091DD7D /* my_plugin.js */; };
+		77F48E191D9AC8E00091DD7D /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F48E181D9AC8E00091DD7D /* Plugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		77F48E091D9ABB110091DD7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77F48E0C1D9ABB110091DD7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77F48E0E1D9ABB110091DD7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77F48E141D9ABB5E0091DD7D /* Plugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
+		77F48E161D9AC7D60091DD7D /* my_plugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = my_plugin.js; sourceTree = "<group>"; };
+		77F48E181D9AC8E00091DD7D /* Plugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Plugin.swift; path = ../../Plugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		77F48E011D9ABB110091DD7D /* JS Test */ = {
 			isa = PBXGroup;
 			children = (
+				77F48E181D9AC8E00091DD7D /* Plugin.swift */,
 				77F48E021D9ABB110091DD7D /* AppDelegate.swift */,
 				77F48E041D9ABB110091DD7D /* ViewController.swift */,
 				77F48E061D9ABB110091DD7D /* Main.storyboard */,
 				77F48E091D9ABB110091DD7D /* Assets.xcassets */,
 				77F48E0B1D9ABB110091DD7D /* LaunchScreen.storyboard */,
 				77F48E0E1D9ABB110091DD7D /* Info.plist */,
-				77F48E141D9ABB5E0091DD7D /* Plugin.swift */,
+				77F48E161D9AC7D60091DD7D /* my_plugin.js */,
 			);
 			path = "JS Test";
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				77F48E0D1D9ABB110091DD7D /* LaunchScreen.storyboard in Resources */,
 				77F48E0A1D9ABB110091DD7D /* Assets.xcassets in Resources */,
 				77F48E081D9ABB110091DD7D /* Main.storyboard in Resources */,
+				77F48E171D9AC7D60091DD7D /* my_plugin.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77F48E151D9ABB5E0091DD7D /* Plugin.swift in Sources */,
+				77F48E191D9AC8E00091DD7D /* Plugin.swift in Sources */,
 				77F48E051D9ABB110091DD7D /* ViewController.swift in Sources */,
 				77F48E031D9ABB110091DD7D /* AppDelegate.swift in Sources */,
 			);
@@ -307,6 +311,7 @@
 				77F48E131D9ABB110091DD7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
